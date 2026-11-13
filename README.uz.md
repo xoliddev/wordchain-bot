@@ -10,7 +10,7 @@
 ![aiogram](https://img.shields.io/badge/aiogram-3.x-26A5E4?logo=telegram&logoColor=white)
 ![SQLite](https://img.shields.io/badge/SQLite-aiosqlite-003B57?logo=sqlite&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-ready-2496ED?logo=docker&logoColor=white)
-![Tests](https://img.shields.io/badge/tests-pytest-0A9EDC?logo=pytest&logoColor=white)
+[![Tests](https://github.com/xoliddev/wordchain-bot/actions/workflows/tests.yml/badge.svg)](https://github.com/xoliddev/wordchain-bot/actions/workflows/tests.yml)
 ![License](https://img.shields.io/badge/license-MIT-green)
 
 Klassik so'z zanjiri o'yini, Telegram bot ko'rinishida: har bir so'z oldingi so'zning oxirgi harfi bilan
