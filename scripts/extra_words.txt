@@ -1,0 +1,30 @@
+# Real common words that the old Webster's web2 lexicon does not know.
+# They are kept even though the lexicon filter would drop them.
+# Rejected-but-frequent candidates are written to scripts/rejected_review.txt on every build.
+
+# irregular forms
+women feet held paid became began woken forgave forgiven overcame withdrew
+
+# modern vocabulary
+online internet website websites email emails app apps blog blogs blogger download downloaded
+laptop desktop smartphone podcast database timeline startup wifi cyber gameplay meme
+okay anymore anytime goodbye girlfriend boyfriend mom moms mama congrats
+healthcare makeup lifestyle mainstream artwork soundtrack hometown backyard paperwork wheelchair
+mindset workforce marketplace fundraising automation coordinator coordination coordinate coordinates
+cooperation cooperative undertaken trafficking expertise arguably ironic superstar freestyle
+hardcore indie vegan pasta cafe fridge metro euro mini mega hype vibe intro promo demo combo bio
+cookie catalog lineup meantime playoff playoffs midfielder transgender mafia proud hang box boxes
+knives gentlemen blew worldwide mainland info stat stats
+
+# capitalized in English, but basic vocabulary every learner uses:
+# days, months, languages and nationalities
+monday tuesday wednesday thursday friday saturday sunday
+january february april june july september october november december
+english french spanish german italian russian chinese japanese korean arabic turkish uzbek
+portuguese dutch greek polish hindi persian kazakh ukrainian swedish irish scottish
+american british european african asian indian canadian australian mexican brazilian
+
+# British spellings
+centre centres theatre colour colours coloured favourite favour honour humour behaviour harbour
+licence offence programme organisation organisations organised realise realised recognise
+recognised neighbourhood neighbours metres

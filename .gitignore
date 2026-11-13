@@ -1,0 +1,60 @@
+# --- Secrets -------------------------------------------------------------
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# --- Runtime data (SQLite databases, backups, exports) -------------------
+/data/
+*.db
+*.db-*
+*.sqlite
+*.sqlite3
+*.sqlite-*
+*.sql
+
+*.dump
+*.bak
+backups/
+*.xlsx
+
+# --- Logs ----------------------------------------------------------------
+logs/
+*.log
+runtime_*
+bot_log*.txt
+
+# --- Python --------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+env/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# --- Tools / IDE / OS ----------------------------------------------------
+.claude/
+.idea/
+.vscode/
+*.swp
+*.ico
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Media / temp caches ---------------------------------------------------
+media/
+cache/
+tmp/
+*.ogg
+*.oga
+*.mp3
+*.wav

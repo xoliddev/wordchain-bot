@@ -1,0 +1,4 @@
+-r requirements.txt
+pytest>=8
+wordfreq>=3.1        # only for scripts/build_words.py
+english-words>=2.0   # only for scripts/build_words.py (proper noun filter)

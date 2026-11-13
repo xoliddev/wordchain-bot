@@ -1,0 +1,16 @@
+.git
+.venv
+venv
+.env
+.env.*
+!.env.example
+data
+tests
+scripts
+__pycache__
+*.pyc
+.pytest_cache
+.claude
+.idea
+.vscode
+*.log
