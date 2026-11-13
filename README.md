@@ -1,5 +1,7 @@
 # 🔤 Word Chain — English vocabulary game for Telegram
 
+**English** · [O'zbekcha](README.uz.md)
+
 > *Telegram uchun inglizcha so'z zanjiri o'yini: bot bilan yoki do'stlar bilan o'ynab, so'z boyligingizni oshiring.*
 
 ![Python](https://img.shields.io/badge/Python-3.12-3776AB?logo=python&logoColor=white)
