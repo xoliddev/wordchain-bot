@@ -2,6 +2,8 @@
 
 [English](README.md) · **O'zbekcha**
 
+[![▶ Jonli demo](https://img.shields.io/badge/%E2%96%B6_Jonli_demo-xoliddev.github.io-22b8f0?style=for-the-badge)](https://xoliddev.github.io/demos/wordchain-bot/)
+
 > *Telegram uchun inglizcha so'z zanjiri o'yini: bot bilan yoki do'stlar bilan o'ynab, so'z boyligingizni oshiring.*
 
 ![Python](https://img.shields.io/badge/Python-3.12-3776AB?logo=python&logoColor=white)
