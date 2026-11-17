@@ -183,6 +183,10 @@ def test_wrong_word_report_and_resign(tmp_path):
             assert "lug'atda bunday so'z topilmadi" in h.last(8)
             await h.press(8, "rep:missing:qwxyzz")
             assert (await h.db.open_reports())[0]["word"] == "qwxyzz"
+            # forged callback data (wrong kind, junk "word") is ignored
+            await h.press(8, "rep:spam:hello")
+            await h.press(8, "rep:missing:<b>x</b> buy now!!!")
+            assert [r["word"] for r in await h.db.open_reports()] == ["qwxyzz"]
             await h.send(8, "🏳️ Taslim bo'lish")
             assert "taslim" in h.last(8).lower()
             await h.press(8, "resign:yes")

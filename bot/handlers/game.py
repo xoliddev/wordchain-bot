@@ -9,6 +9,7 @@ from .. import keyboards as kb
 from .. import texts
 from ..db import Database, UserProfile
 from ..dictionary import Dictionary
+from ..engine import normalize
 from ..game_manager import GameManager
 from .common import show
 
@@ -165,6 +166,10 @@ async def cb_resign_no(cb: CallbackQuery) -> None:
 @router.callback_query(F.data.startswith("rep:"))
 async def cb_report(cb: CallbackQuery, db: Database, dictionary: Dictionary) -> None:
     _, kind, word = cb.data.split(":", 2)
+    # callback_data can be forged: accept only our two kinds and a well-formed word
+    if kind not in ("missing", "invalid") or normalize(word) != word:
+        await cb.answer()
+        return
     if kind == "missing" and word in dictionary:
         await cb.answer(texts.REPORT_ALREADY_IN)
         return
