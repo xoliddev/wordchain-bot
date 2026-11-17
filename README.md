@@ -117,6 +117,9 @@ docker run -d --name wordchain --restart unless-stopped \
   --env-file .env -v wordchain-data:/app/data wordchain
 ```
 
+The container runs as a non-root user (uid 10001). A volume created by an older image is owned by root;
+fix it once with `docker run --rm -u 0 -v wordchain-data:/app/data wordchain chown -R 10001 /app/data`.
+
 ## 🧪 Tests
 
 ```bash

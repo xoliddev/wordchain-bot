@@ -119,6 +119,9 @@ docker run -d --name wordchain --restart unless-stopped \
   --env-file .env -v wordchain-data:/app/data wordchain
 ```
 
+Konteyner root emas, uid 10001 foydalanuvchisi bilan ishlaydi. Eski image yaratgan volume root'ga tegishli bo'ladi;
+uni bir marta to'g'rilang: `docker run --rm -u 0 -v wordchain-data:/app/data wordchain chown -R 10001 /app/data`.
+
 ## 🧪 Testlar
 
 ```bash
